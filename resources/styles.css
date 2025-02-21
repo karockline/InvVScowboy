@@ -1,0 +1,136 @@
+* {margin:0;
+padding:0;
+box-sizing: border-box;
+}
+
+body{
+    background-color: #DD58D6;
+}
+
+header {
+background-color: #DD58D6;
+font-family: 'Press Start 2P';
+color: #00FFCA;
+text-align: center;
+padding: 2.2em;
+}
+header img{
+    width: 80vh;
+}
+.arcade {
+    background-color: #C127B9;
+    width: 100%;
+    height: 34em;
+    border: 4px solid black;
+}
+.screen {
+width: 80vh;
+height: 50vh;
+border: 1px solid black;
+margin: auto ;
+margin-top: 2em;
+overflow: visible;
+}
+
+canvas {
+     
+height: 100%;
+width: 100%;
+box-shadow: #97FEED 20px 10px 50px;
+}
+
+.control {
+    display: flex;
+    justify-content: center;
+
+}
+.joystick{
+    
+    width: 20vh;
+    height: 18vh;
+    margin-right: 20vh;
+    position: relative;
+}
+.joystick:before{
+    content: "";
+    width: 80%;
+    height: 20%;
+    background-color: #131313;
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    border: solid black 0.18em;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    z-index: 3;
+}
+.circle{
+    width: 50%;
+    height: 50%;
+    background-color: red;
+    border-radius: 50%;
+    border: solid black 0.2em;
+    position: absolute;
+    left: 25%;
+    box-shadow: inset 1px -10px 1px 2px #cc0000;
+    transform: rotate(-15deg);
+    transition: transform 1s;
+    transform-origin: bottom;
+}
+.circle:before{
+    content: "";
+    width: 10px;
+    height: 80px;
+    background-color: grey;
+    border: solid black 0.18em;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    box-shadow: inset 2px 0px 6px #131313;
+    position: absolute;
+    left:40%;
+    top:85%; 
+}
+.circle:hover{
+    transform: rotate(25deg);
+}
+.buttons{
+   
+    width: 20vh;
+    height: 18vh;
+    position: relative;
+}
+.boton{
+    width: 60%;
+    height: 60%;
+    background-color:#ebc05d;
+    border: solid black 0.18em;
+    border-radius: 50%;
+    position: absolute;
+    left: 20%;
+    bottom: 0%;
+    box-shadow: 0px 12px 0 #4f3804;
+    transform: rotateX(50deg);
+    transition: transform 1s;
+}
+.boton:hover{
+    background-color:#e6b646; 
+    transform: translateY(7px) rotateX(50deg);
+    box-shadow: 0px 6px 0 #4f3804;
+}
+.instructions .arrow{
+    border: 1px solid #2317C1;
+    padding: 2px;
+}
+.instructions{
+    font-family: 'Press Start 2P';
+    text-align: center;
+    line-height: 1.5rem;
+    color: #2317C1;   
+    background-color: whitesmoke;
+    width: 55rem;
+    margin: 0 auto;
+}
+
+.instructions ol{
+    
+}

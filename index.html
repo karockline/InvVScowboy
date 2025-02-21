@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>👾Invaders VS cowboy🤠</title>
+    <link rel="stylesheet" type="text/css" href="./resources/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+ <header>
+    <h1>Karock Games</h1>
+    <img src="https://see.fontimg.com/api/renderfont4/0WYod/eyJyIjoiZnMiLCJoIjo4MSwidyI6MTI1MCwiZnMiOjY1LCJmZ2MiOiIjMDAwMDAwIiwiYmdjIjoiI0ZGRkZGRiIsInQiOjF9/SW52YWRlcnMgVlMgQ293Ym95/alien-ravager.png" alt="">
+</header>   
+ <div class="arcade">
+    <div class="screen">
+        <canvas id="game"></canvas>
+    </div>
+    <div class="control">
+        <div class="joystick">
+            <div class="circle"></div>
+        </div>
+        <div class="buttons">
+            <div class="boton">
+                <audio src="./resources/sounds/fast-click.mp3" id="click" preload="auto"  >
+                   <source src="./resources/sounds/fast-click.mp3" type="mpeg">
+                </audio>
+            </div>
+        </div>
+    </div>
+    <div class="instructions">
+        <ol>
+            <li>Move left and right with your arrow keys <i class="fa-solid fa-arrow-left arrow"></i>   <i class="fa-solid fa-arrow-right arrow"></i> </li>
+            <li>Use spacebar to shoot the aliens <i class="fa-regular fa-keyboard"></i></li>
+            <li>To start a new game refresh your page <i class="fa-solid fa-rotate-right"></i></li>
+        </ol>
+     </div>
+ </div>
+ 
+<script type="module" src="index.js">
+/*const audioElement = document.getElementById("click");
+
+const playButton = document.querySelector(".boton");
+playButton.addEventListener('click', function(){
+    audioElement.play();
+})
+let click = document.getElementById("click");
+    function playAudio(){
+        let audio = new Audio("./resources/sounds/fast-click.mp3");
+        audio.play();
+    }
+    click.addEventListener("mouseover, playAudio");*/
+
+  /* var Clickboton = $("#click")[0];
+$(".arcade .control .buttons .boton")
+.mouseenter(function(){
+    Clickboton.play();
+});*/
+</script>
+<script src="https://kit.fontawesome.com/4fe66c98a3.js" crossorigin="anonymous"></script>
+</body>
+</html>
